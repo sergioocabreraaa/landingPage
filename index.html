@@ -1,69 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Ejercicio LandingPage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <div class="contenedor">
-        <!-- Contenido -->
-        <main>
+    <link rel="stylesheet" href="style.css" />
 
-            <!--banner-->
-            <section class="banner">
-                <h2 class="banner__titulo">Website'es Content Audit</h2>
-                <h4 class="banner__subtitulo">in 8 Easy Steps</h4>
-                <a href="#" class="banner__boton">Learn more</a>
-            </section>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- CONTENIDO -->
+
+      <main>
+
+        <!-- BANNER -->
+
+        <section class="banner">
+
+          <h2 class="banner__titulo">Website´s Content Audit</h2>
+
+          <h4 class="banner_subtitulo">in 8 Easy Steps</h4>
+
+          <a href="#" class="banner__boton">Learn more</a>
+
+        </section>
+
+        <!-- TEXTO EXPLICACIÓN -->
+
+        <section class="texto">
+
+          <p class="texto__saludo">Hi, Toni</p>
+
+          <p class="texto__cuerpo">
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+            Cupiditate, neque?
+
+          </p>
+
+          <p class="texto__cuerpolink">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+
+            perspiciatis id nostrum maiores soluta nam, reprehenderit<a
+
+              class="texto__cuerpolink--link"
+
+              href="#"
+
+              >ipsam harum voluptate magni?</a
+
+            >
+
+            <a
+
+              class="texto__boton"
+
+              href="#"
+
+              >Content Audit in 8 Steps</a
+
+            >
+
+          </p>
+
+        </section>
+
+        <!-- CONTACTO EMPRESA -->
+
+        <section class="contacto">
+
+            <!-- PICTURE imagen de empresa de contacto-->
+
+            <picture class="contacto__avatar">
+
+        <!-- smartphone -->
+
+        <source
+
+          srcset="
+
+            img/smartphone/avatar.jpg 1x,
+
+            img/smartphone/avatar@2x.jpg 2x,
+
+            img/smartphone/avatar@3x.jpg 3x
+
+          "
+
+          media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+
+        />
 
 
-            <!--texto explicacion-->
-            <section class="texto">
-                <p class="texto__saludo">Hi toni</p>
-                <p class="texto__cuerpo">
 
-                </p>
-                <p class="texto__cuerpolink">
-                    <a class="texto__cuerpolink--link" href="#">Lorem ipsum dolor sit amet </a>consectetur adipisicing
-                    elit.
-                    Illum neque cumque, libero error nesciunt veniam quidem
-                    animi eos maxime nisi similique eligendi numquam
-                    recusandae ex suscipit repudiandae minima tenetur
-                    odit velit ipsa porro soluta officia! Quisquam n
-                    am itaque modi tempore earum velit incidunt od
-                    it inventore laboriosam. Quisquam, culpa nobis ad, veritatis voluptas repellendus
-                    ipsum eius earum officiis corporis placeat odit.
+        <!-- ipad -->
 
-                </p>
-                <a href="#" class="texto__boton">Content Audit in 8 Steps</a>
+        <source
 
-            </section>
+          srcset="img/tablet/avatar.jpg 1x, 
+
+									img/tablet/avatar2x.jpg 2x"
+
+          media="(min-width:768px) and (max-width:1024px) and (orientation: portrait)"
+
+        />
 
 
-            <!-- contacto empresa -->
-            <section class="contacto">
-                <picture>
-                    <source srcset="
-                    ./img/smartphone/avatar.webp x1,
-                    ./img/smartphone/avatar@2x.webp x2,
-                    ./img/smartphone/avatar@3x.webp x3"
 
-                >
-                    media=""
-                    <img src="" alt="avatar contacto mujer empresa">
-                </picture>
+        <!-- escritorio -->
 
-            </section>
+        <source
 
-        </main>
-        <!--Cpopy y localizacion-->
-        <footer></footer>
+          srcset="
+
+            img/desktop/avatar.jpg  1x,
+
+            img/desktop/avatar2x.jpg 2x
+
+          "
+
+          media="(min-width:1200px)"
+
+        />
+
+
+
+        <!-- Etiqueta img -->
+
+        <img src="" alt="banner" />
+
+        </picture>
+
+        <!-- Datos de contacto -->
+
+        <ul class="contacto_datos">
+
+            <li>Cheers,</li>
+
+            <li>Zlata Verzhbitskaia</li>
+
+            <li>SEO PowerSuite</li>
+
+        </ul>
+
+        </section>
+
+      </main>
+
+      <!-- copyright y localización -->
+
+      <footer></footer>
+
     </div>
-</body>
+
+  </body>
 
 </html>
